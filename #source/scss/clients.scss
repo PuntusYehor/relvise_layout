@@ -1,0 +1,19 @@
+.clients {
+	padding: 50px 0;
+
+	&__container {}
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__item {
+		flex: 0 1 16.66667%;
+		padding: 8px 15px;
+		text-align: center;
+	}
+
+}

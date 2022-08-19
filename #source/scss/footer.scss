@@ -1,0 +1,154 @@
+.footer {
+
+	&__top {
+		background-color: #17213C;
+		padding: 30px 0;
+	}
+
+	&__container {}
+
+	&__body {
+		display: flex;
+		color: #fff;
+		margin: 0 -15px;
+		flex-wrap: wrap;
+	}
+
+	&__body :last-child {
+		flex: 1 1 33.33334%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__column {
+		flex: 0 1 16.66667%;
+		padding: 20px 15px;
+
+	}
+
+	@media (max-width: 992px) {
+		&__body :last-child {
+			flex: 1 1 100%;
+		}
+
+		&__column {
+			flex: 0 1 25%;
+		}
+	}
+
+	@media (max-width: 700px) {
+		&__column {
+			flex: 0 1 50%;
+		}
+	}
+
+	&__label {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+		margin: 0 0 20px 0;
+	}
+
+	&__menu {}
+
+	&__list>*:not(:last-child) {
+		margin: 0 0 10px 0;
+	}
+
+	&__contacts {}
+
+	&__bottom {
+		padding: 25px 0;
+	}
+
+	@media (min-width: 767px) {
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	&__copy {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 171%;
+		letter-spacing: 0.2px;
+		color: #737373;
+	}
+
+	@media (max-width: 767px) {
+		&__copy {
+			text-align: center;
+			margin: 0 0 10px 0;
+		}
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	&__social>*:not(:last-child) {
+		margin: 0 20px 0 0;
+	}
+
+	&__icon {}
+}
+
+.menu-footer {
+
+	&__item {}
+
+	&__link {
+		color: #fff;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 171%;
+		letter-spacing: 0.2px;
+	}
+
+	&__link:hover {
+		text-decoration: underline;
+	}
+}
+
+.contacts-footer {
+	&>*:not(:last-child) {
+		margin: 0 0 13px 0;
+	}
+
+	&__item {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 171%;
+		color: #fff;
+		letter-spacing: 0.2px;
+		padding-left: 34px;
+		display: flex;
+		align-items: center;
+		min-height: 30px;
+
+
+		&_phone {
+			background: url(../../images/footer/01.svg) 0 0 no-repeat;
+
+		}
+
+		&_map {
+			background: url(../../images/footer/02.svg) 0 0 no-repeat;
+		}
+
+		&_email {
+			background: url(../../images/footer/03.svg) 0 0 no-repeat;
+			align-items: flex-start;
+		}
+	}
+
+	&__item:hover {
+		text-decoration: underline;
+	}
+}

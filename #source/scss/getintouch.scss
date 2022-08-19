@@ -1,0 +1,115 @@
+.getintouch {
+	padding: 80px 0 150px 0;
+	background-color: #F3F3F3;
+
+	&__header {
+		margin: 0 0 80px 0;
+	}
+
+	@media (max-width: 976px) {
+		&__header {
+			margin: 0 0 50px 0;
+		}
+
+		padding: 50px 0 0px 0;
+	}
+
+	@media (min-width: 976px) {
+		&__cards {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	@media (max-width: 1076px) {
+		&__cards {
+			margin: 0 -15px;
+		}
+	}
+
+	&__card {
+		flex: 0 1 33.3333%;
+		background-color: #fff;
+	}
+
+	&__item {}
+}
+
+.item-getintouch {
+	padding: 50px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	&>*:not(:last-child) {
+		margin: 0 0 15px 0;
+	}
+
+	&__icon {}
+
+	&__mail {
+		color: inherit;
+		font-weight: 600;
+		line-height: 171%;
+		letter-spacing: 0.2px;
+	}
+
+	&__mail:hover {
+		text-decoration: underline;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+	}
+
+	&__button {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-weight: 600;
+		line-height: 171%;
+		letter-spacing: 0.2px;
+		color: #FF7B47;
+		min-height: 44px;
+		border: 1px solid #FF7B47;
+		padding: 5px 20px;
+		transition-property: all;
+		transition-duration: 0.3s;
+		transition-timing-function: ease;
+		transition-delay: 0s;
+	}
+
+	&__button:hover {
+		color: #fff;
+		background-color: #FF7B47;
+	}
+
+}
+
+.getintouch-card-blue {
+	background-color: #252B42;
+	color: #fff;
+
+	@media (min-width: 976px) {
+		& {
+			padding: 30px 0;
+		}
+	}
+
+	.item-getintouch .item-getintouch__button {
+		border: 1px solid #fff;
+		color: inherit;
+	}
+
+	.item-getintouch .item-getintouch__button:hover {
+		color: #252B42;
+		background-color: #fff;
+	}
+}

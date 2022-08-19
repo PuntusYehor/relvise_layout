@@ -1,0 +1,82 @@
+@import "nullstyle.scss";
+
+/*---------PAGE-----------*/
+
+._container {
+	max-width: 1046px;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: content-box;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+
+.page__cards {
+	margin: -111px 0 0 0;
+}
+
+.page__main-block {}
+
+.page__stats {}
+
+.page__practice {}
+
+.page__whoweare {}
+
+.page__clients {}
+
+.page__subscribe {}
+
+.page__getintouch {}
+
+.page__contact {}
+
+.page__footer {}
+
+/*---------HEADER-BLOCK-----------*/
+
+.header-block {
+	text-align: center;
+	letter-spacing: 0.2px;
+
+	&__title {
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 142%;
+		margin-bottom: 10px;
+	}
+
+	@media (max-width: 992px) {
+		&__title {
+			font-size: 35px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		&__title {
+			font-size: 30px;
+		}
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 143%;
+	}
+}
+
+@import "header.scss";
+@import "mainblock.scss";
+@import "cards.scss";
+@import "stats.scss";
+@import "practice.scss";
+@import "whoweare.scss";
+@import "clients.scss";
+@import "subscribe.scss";
+@import "getintouch.scss";
+@import "contact.scss";
+@import "footer.scss";

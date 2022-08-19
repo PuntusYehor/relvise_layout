@@ -1,0 +1,89 @@
+/*---------БЛОК PRACTICE-----------*/
+
+.practice {
+	padding: 125px 0 80px 0;
+
+	@media (max-width: 992px) {
+		& {
+			padding: 40px 0 80px 0;
+		}
+	}
+
+	@media (max-width: 767px) {
+		& {
+			padding: 0px 0 40px 0;
+		}
+	}
+
+	&__header {
+		margin-bottom: 45px;
+	}
+
+	&__body {
+		display: flex;
+		margin: 0px -20px -30px;
+		flex-wrap: wrap;
+	}
+
+	&__column {
+		flex: 0 1 25%;
+		padding: 0 20px;
+		margin: 0 0 30px 0;
+	}
+
+	@media (max-width: 992px) {
+		&__column {
+			flex: 0 1 50%;
+		}
+	}
+
+	@media (max-width: 560px) {
+		&__column {
+			flex: 0 1 100%;
+		}
+	}
+}
+
+.item-practice {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	&__content {
+		padding: 30px;
+		flex: 1 1 auto;
+	}
+
+	&__link {
+		display: inline-block;
+	}
+
+	&__link:not(:last-child) {
+		margin: 0 0 15px 0;
+	}
+
+	&__link:hover {
+		text-decoration: underline;
+	}
+
+	&__title {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+		color: #252B42;
+	}
+
+	&__text {
+		font-weight: 500;
+		line-height: 143%;
+		letter-spacing: 0.2px;
+		color: #737373;
+	}
+
+	&__image {
+		display: block;
+		padding: 0 0 60% 0;
+	}
+}

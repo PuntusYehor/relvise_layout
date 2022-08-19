@@ -1,0 +1,94 @@
+//---------ШАПКА-----------
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	min-height: 104px;
+
+	&__container {
+		display: flex;
+		min-height: 104px;
+		align-items: center;
+	}
+
+	@media (max-width: 479px) {
+		&__container {
+			min-height: 70px;
+		}
+	}
+
+	&__logo {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 133%;
+		letter-spacing: 0.1px;
+		color: #252B42;
+	}
+
+	&__menu {
+		margin: 0 0 0 133px;
+	}
+
+	@media (max-width: 992px) {
+		&__menu {
+			margin: 0 0 0 80px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		&__menu {
+			margin: 0 0 0 40px;
+		}
+	}
+
+	@media (max-width: 479px) {
+		&__menu {
+			margin: 0 0 0 20px;
+		}
+	}
+}
+
+.menu {
+	padding: 5px 0;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		padding: 0 21px 0 0;
+	}
+
+	&__item:last-child {
+		padding: 0;
+	}
+
+	&__link {
+		font-weight: 600;
+		line-height: 171%;
+		text-align: center;
+		letter-spacing: 0.2px;
+		color: #737373;
+	}
+
+	&__link:hover {
+		text-decoration: underline;
+	}
+
+	@media (max-width: 829px) {
+		&__link {
+			color: #4b4949;
+		}
+	}
+
+	@media (max-width: 479px) {
+		&__link {
+			font-size: 18px;
+		}
+	}
+
+}
